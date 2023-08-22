@@ -1,7 +1,7 @@
 resource "azurerm_kubernetes_cluster" "aks_cluster" {
     name                = "sd5261-locvothanh-aks"
-    location            = var.resource_group_location
-    resource_group_name = var.resource_group_name
+    location            = "Southeast Asia"
+    resource_group_name = "myAzureResourceGroup"
     dns_prefix          = "myakscluster"
 
     identity {
