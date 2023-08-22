@@ -15,8 +15,8 @@ resource "azurerm_kubernetes_cluster" "aks_cluster" {
     }
 
     network_profile {
-        network_plugin        = "kubenet"
-        load_balancer_profile = "standard"
+        network_plugin        = "Kubenet"
+        load_balancer_profile = "Standard"
     }
 
     tags = {

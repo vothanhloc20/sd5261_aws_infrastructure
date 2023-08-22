@@ -5,8 +5,6 @@ resource "azurerm_container_registry" "acr" {
     sku                     = "Standard"
     admin_enabled           = false
 
-    georeplication_locations = [var.resource_group_location]
-
     tags = {
         environment = "dev"
     }
