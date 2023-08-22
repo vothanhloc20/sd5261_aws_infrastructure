@@ -14,11 +14,6 @@ resource "azurerm_kubernetes_cluster" "aks_cluster" {
         vm_size    = "Standard_B4ms"
     }
 
-    network_profile {
-        network_plugin        = "Kubenet"
-        load_balancer_profile = "Standard"
-    }
-
     tags = {
         environment = "dev"
     }
